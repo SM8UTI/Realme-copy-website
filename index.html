@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realme</title>
+
+     <!-- Style -->
+     <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/realme-logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="https://www.realme.com/in/">Home</a></li>
+                    <li><a href="https://www.realme.com/in/realme-phones">Phone</a></li>
+                    <li><a href="https://www.realme.com/in/realme-phones">Accessories</a></li>
+                    <li><a href="https://www.realme.com/in/support">Contact Us</a></li>
+                    <li><a href="https://id.realme.com/?callback=https://buy.realme.com/in/cart">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/narzo-removebg-preview.png" alt="" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/camera.png" alt="">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>50 MP AI Triple Camera</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/processor.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Helio G85 Gaming Processor </p>
+                      
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png" alt="">
+                    <div>
+                        <h1>Display</h1>
+                        <p>16.5cm (6.5") Mini-drop Fullscreen</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png" alt="">
+                    <div>
+                        <h1>Battery</h1>
+                        <p>6000mAh 18W Quick Charge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" alt="" id="Upbtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" alt="" id="Downbtn">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var Upbtn = document.getElementById("Upbtn");
+        var Downbtn = document.getElementById("Downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        Upbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        Downbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+</body>
+</html>
